@@ -6,12 +6,10 @@ Create table students(
   student_name varchar(30),
   class varchar(10),
   mark int,
-  #nationality varchar(20),
- #date_of_admission date,
   gender char(10)
   );
   ```
-  ##Creating first table students in demo university table
+  ## Creating first table students in demo university table
   
 ```
 INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`) VALUES
@@ -52,10 +50,11 @@ INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`)
 (35, 'Rows Noump', 'Six', 88, 'female');
 ```
 
-##Inserting demo data into the table
-###Creating more tables and inserting values
+## Inserting demo data into the table
+### Creating more tables and inserting values
   
-```  CREATE TABLE `department` (
+```  
+CREATE TABLE `department` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `dept_name` VARCHAR(50) NOT NULL,
   `building` VARCHAR(50) NOT NULL,
@@ -64,7 +63,8 @@ INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`)
 );
 ```
 
-```INSERT INTO `department` (dept_name, building, budget) VALUES
+```
+INSERT INTO `department` (dept_name, building, budget) VALUES
   ("Computer Science", "Network", 1600000),
   ("Economics", "Efficient", 1200000),
   ("Art", "Pretty", 600000),
@@ -82,7 +82,8 @@ INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`)
 );
 ```
 
-```  INSERT INTO `instructor` (inst_name, salary, inst_dept) VALUES
+```  
+INSERT INTO `instructor` (inst_name, salary, inst_dept) VALUES
   ("A retired Professor", 65000, "Computer Science"),
   ("Alan Smith", 40000, "Computer Science"),
   ("Cristiano Roony", 38000, "Economics"),
