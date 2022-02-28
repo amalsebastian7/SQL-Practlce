@@ -49,10 +49,11 @@ INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`)
 (32, 'Binn Rott', 'Seven', 90, 'female'),
 (33, 'Kenn Rein', 'Six', 96, 'female'),
 (34, 'Gain Toe', 'Seven', 69, 'male'),
-(35, 'Rows Noump', 'Six', 88, 'female'); ```
+(35, 'Rows Noump', 'Six', 88, 'female');
+```
 
 ##Inserting demo data into the table
-  ###Creating more tables and inserting values
+###Creating more tables and inserting values
   
 ```  CREATE TABLE `department` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -63,7 +64,7 @@ INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`)
 );
 ```
 
- ```INSERT INTO `department` (dept_name, building, budget) VALUES
+```INSERT INTO `department` (dept_name, building, budget) VALUES
   ("Computer Science", "Network", 1600000),
   ("Economics", "Efficient", 1200000),
   ("Art", "Pretty", 600000),
@@ -71,14 +72,15 @@ INSERT INTO `students` (`student_id`, `student_name`, `class`, `mark`, `gender`)
   ("Music", "Sound", 120000),
   ("Math", "Theory", 40000),
   ("Statistics", "Probably", 70000);
-  ```
-  ```
+ ```
+ ```
   CREATE TABLE `instructor` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `inst_name` VARCHAR(30) NOT NULL,
   `salary` int(13) UNSIGNED NOT NULL,
   `inst_dept` VARCHAR(50) NOT NULL
-);```
+);
+```
 
 ```  INSERT INTO `instructor` (inst_name, salary, inst_dept) VALUES
   ("A retired Professor", 65000, "Computer Science"),
